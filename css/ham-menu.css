@@ -1,0 +1,66 @@
+/* The responsive hamburger menu was adapted from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+    See license file for its license */
+
+/* [ON BIG SCREENS] */
+
+/* styling nav items on computer screens */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav li {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 2%;
+}
+
+.current a {
+  color : #eb7700;
+}
+
+.current a:hover {
+  text-decoration: none;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 850px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: red;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+/* need to make hamburger icon stay visible (sticky) */
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}

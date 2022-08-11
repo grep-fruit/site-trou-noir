@@ -1,0 +1,392 @@
+/* TROU NOIR */
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*
+orange moyen : ffad00
+rouge foncé: b31400
+ */
+
+
+
+
+  ::selection {
+    color: white;
+    background: red;
+  }
+
+
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: black;
+  color : white;
+  font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
+}
+
+main {
+  padding: 0 5% 5%;
+  max-width: 2000px;
+  width: 90%;
+  margin: auto;
+}
+
+.padding-top {
+  padding-top: 3rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+  /* margin: auto; */
+}
+
+.less-width {
+  width: 85%;
+  margin: auto;
+}
+
+/* ********************** text styles */
+
+a {
+  color : red;
+  text-decoration: none;
+  font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
+}
+
+a:hover{
+  color : #eb7700;
+  text-decoration: line-through;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2 {
+  font-family: 'ProfaisalRegular', 'Courier New', monospace;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 2rem;
+  line-height: 3rem;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding : 3%;
+  letter-spacing: 6px;
+  line-height: 3rem;
+}
+
+.dots {
+  border-bottom: 2px dotted #eb7700;
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  padding : 2%;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding : 1%;
+}
+
+p {
+  padding : 1%;
+  line-height: 1.25rem;
+}
+
+.right-all {
+  text-align: right;
+}
+
+.left-all {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.small-font {
+  font-size: 0.75rem;
+}
+
+.tab {
+  padding-left: 7rem;
+}
+
+.halftab {
+  padding-left: 1rem;
+}
+
+ul {
+  line-height: 1.5rem;
+}
+
+.cours {
+  padding : 3%;
+  border: 1px dotted #eb7700;
+  border-radius: 10%;
+  height: 18rem;
+}
+
+.cours-texte {
+  padding-top: 2rem;
+}
+
+.vert:hover {
+  color: green;
+}
+
+.about-links {
+  margin-top: 2rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 10%;
+  padding-right:10%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+/* BUTTONS */
+
+.button {
+  background-color: red;
+  color: black;
+  padding: 5%;
+  border-radius: 15%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* *********************header */
+
+
+#header {
+  background-image: url("banner5.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.logo {
+  width: 55%;
+  padding: 1rem 0 1rem 0;
+  margin-left: 45%;
+}
+/* régler le problème de grosseur du logo */
+
+
+#header h1 {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+#header>.flex-container{
+  justify-content: center;
+}
+
+.ham-english {
+  display: none;
+}
+
+/* p.lang-switch {
+  padding: 0;
+} */
+
+.lang-switch a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem 2rem 0 0;
+}
+/* régler problème margin-top, changer "english" pour "lang" */
+.
+
+
+/* ********************** footer */
+
+
+
+
+/* ******************GRID */
+
+.grid-container {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap : 1.5rem;
+}
+
+.grid-container-hor {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap : 1.5rem;
+}
+
+
+/* ***************** flexbox */
+
+.flex-container {
+  display: flex;
+  flex-direction : row;
+  justify-content: space-between;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+
+
+.flex-1 {
+  flex: 1;
+  align-self: center;
+}
+
+.flex-2 {
+  flex : 2;
+  align-self: center;
+}
+
+.flex-3 {
+  flex: 3;
+  align-self: center;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.round {
+  max-height: 400px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 200px;
+  border : none;
+}
+
+
+
+/* footer */
+
+#footer-bg {
+  padding : 2rem 5% 2rem 5%;
+  background-image: url("footer2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* media queries */
+
+@media all and (max-width: 850px) {
+
+  .hidden {
+    display: none;
+  }
+
+  .grid-container {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 1.5rem;
+  }
+
+  .no-flex-when-small {
+    display : block;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  #header h1{
+    max-width: 20rem;
+    margin: auto 0 auto auto;
+  }
+
+  .infos img {
+    margin-top: 2rem;
+  }
+
+  .round{
+    margin-top: 2rem;
+  }
+
+  header {
+
+  }
+
+  footer {
+
+  }
+}
+
+
+
+@media all and (max-width: 480px) {
+
+  .hidden2 {
+    display: none;
+  }
+
+  .grid-container {
+    display : grid;
+    grid-template-columns: 1fr;
+    gap : 1.5rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #header h1 {
+    padding : 1rem 5%;
+  }
+
+  nav{
+    padding: 0rem 5% 0.5rem 5%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+
+
+
+/* vérifier que ça marche sur un vrai petit écran de cell */
+
+
+}
