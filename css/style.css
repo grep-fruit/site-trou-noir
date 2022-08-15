@@ -187,7 +187,7 @@ ul {
 /* *********************header */
 
 
-#header {
+header {
   background-image: url("banner5.jpg");
   background-position: top;
   background-size: cover;
@@ -203,11 +203,11 @@ ul {
 /* régler le problème de grosseur du logo */
 
 
-#header h1 {
+header h1 {
   padding: 2.5rem 0 2.5rem 0;
 }
 
-#header>.flex-container{
+header>.flex-container{
   justify-content: center;
 }
 
@@ -328,7 +328,7 @@ ul {
     width: 100%;
   }
 
-  #header h1{
+  header h1{
     max-width: 20rem;
     margin: auto 0 auto auto;
   }
@@ -368,7 +368,7 @@ ul {
     text-align: center;
   }
 
-  #header h1 {
+  header h1 {
     padding : 1rem 5%;
   }
 
