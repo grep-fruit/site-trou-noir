@@ -374,6 +374,10 @@ header>.flex-container{
 
 @media all and (max-width: 480px) {
 
+  html {
+    font-size: 20px;
+  }
+
   .hidden2 {
     display: none;
   }
@@ -390,6 +394,10 @@ header>.flex-container{
 
   header h1 {
     padding : 1rem 5%;
+  }
+
+  p{
+    padding-bottom: 1rem;
   }
 
   nav{
