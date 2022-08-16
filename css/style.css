@@ -145,11 +145,13 @@ ul {
 }
 
 .cours {
-  padding : 3%;
+  padding : 5%;
   border: 1px dotted #eb7700;
   border-radius: 10%;
   height: 18rem;
 }
+
+/* pourrais utiliser flex-column pour espacer de manière flexible les parties des boites "cours" */
 
 .cours-texte {
   padding-top: 2rem;
@@ -326,8 +328,8 @@ header>.flex-container{
   }
 
   header h1{
-    max-width: 20rem;
-    margin: auto 0 auto auto;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
   }
 
   header {
@@ -350,12 +352,17 @@ header>.flex-container{
     display: none;
   }
 
+  .deuxieme-cours {
+    margin-top : 3rem;
+  }
+
   main {
     padding: 3%;
   }
 
   header .logo {
-    margin: 0;
+    margin: auto;
+    width: 90%;
   }
 
   header .flex-container {
@@ -410,6 +417,8 @@ header>.flex-container{
 
   header .logo {
     margin: auto;
+    width: 70%;
+    max-width: 250px;
   }
 
   p{
