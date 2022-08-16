@@ -224,11 +224,6 @@ header>.flex-container{
   font-size: 1.5rem;
   padding: 2rem 2rem 0 0;
 }
-/* régler problème margin-top, changer "english" pour "lang" */
-.
-
-
-/* ********************** footer */
 
 
 
@@ -306,6 +301,8 @@ header>.flex-container{
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/* could use flex-direction: column instead of no flex */
+
 /* media queries */
 
 @media all and (max-width: 850px) {
@@ -333,20 +330,43 @@ header>.flex-container{
     margin: auto 0 auto auto;
   }
 
-  .infos img {
-    margin-top: 2rem;
-  }
-
-  .round{
-    margin-top: 2rem;
-  }
-
   header {
 
   }
 
   footer {
 
+  }
+
+  .less-width {
+    width: 100%;
+  }
+
+  .about-links {
+    padding: 0;
+  }
+
+  header .lang-switch{
+    display: none;
+  }
+
+  main {
+    padding: 3%;
+  }
+
+  header .logo {
+    margin: 0;
+  }
+
+  header .flex-container {
+    justify-content: center;
+  }
+  /* régler l'allignement du logo et titre dans le header (again) */
+
+  .actualités {
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
   }
 }
 
