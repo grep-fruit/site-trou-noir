@@ -284,9 +284,17 @@ header>.flex-container{
   border : none;
 }
 
-.zines img {
-  max-width: 33%;
+.zines {
+  margin: auto;
 }
+
+.zines img {
+  width: 100%;
+  max-width: 25%;
+
+}
+
+
 
 
 /* footer */
