@@ -284,6 +284,9 @@ header>.flex-container{
   border : none;
 }
 
+.zines img {
+  max-width: 33%;
+}
 
 
 /* footer */
