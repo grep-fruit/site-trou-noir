@@ -275,6 +275,8 @@ header>.flex-container{
 .stretch {
   align-items: stretch;
 }
+/* (c'est apparu quand cette classe là?) */
+
 
 .round {
   max-height: 400px;
@@ -291,7 +293,6 @@ header>.flex-container{
 .zines img {
   width: 100%;
   max-width: 25%;
-
 }
 
 
