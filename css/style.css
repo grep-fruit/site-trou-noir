@@ -176,6 +176,10 @@ ul {
   font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
 }
 
+.gallery img {
+  border: 1px solid grey;
+}
+
 
 /* BUTTONS */
 
