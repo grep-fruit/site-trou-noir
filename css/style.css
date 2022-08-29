@@ -171,6 +171,10 @@ ul {
   background-color: rgba(255, 255, 255, 0.02);
 }
 
+.numbers {
+  font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
+}
+
 
 /* BUTTONS */
 
