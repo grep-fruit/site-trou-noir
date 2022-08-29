@@ -171,6 +171,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.02);
 }
 
+/* other font does not have numbers */
 .numbers {
   font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
 }
@@ -300,7 +301,10 @@ header>.flex-container{
   max-width: 30%;
 }
 
-
+.zines p {
+  padding-bottom: 2rem;
+  padding-top: 0;
+}
 
 
 /* footer */
