@@ -41,6 +41,10 @@ main {
   margin: auto;
 }
 
+#gallerie {
+  padding:0;
+}
+
 .padding-top {
   padding-top: 3rem;
 }
