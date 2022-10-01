@@ -1,28 +1,20 @@
 /* TROU NOIR */
-
 /* Box Model Hack */
 * {
   box-sizing: border-box;
 }
 
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
 /*
 orange moyen : ffad00
 rouge foncé: b31400
  */
-
-
-
-
-  ::selection {
-    color: white;
-    background: red;
-  }
-
+::selection {
+  color: white;
+  background: red;
+}
 
 html {
   font-size: 22px;
@@ -30,7 +22,7 @@ html {
 
 body {
   background-color: black;
-  color : white;
+  color: white;
   font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
 }
 
@@ -42,7 +34,7 @@ main {
 }
 
 #gallerie {
-  padding:0;
+  padding: 0;
 }
 
 .padding-top {
@@ -61,15 +53,14 @@ img {
 }
 
 /* ********************** text styles */
-
 a {
-  color : red;
+  color: red;
   text-decoration: none;
   font-family: 'CMUTypewriterTextRegular', 'Courier New', monospace;
 }
 
-a:hover{
-  color : #eb7700;
+a:hover {
+  color: #eb7700;
   text-decoration: line-through;
 }
 
@@ -94,7 +85,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  padding : 3%;
+  padding: 3%;
   letter-spacing: 6px;
   line-height: 3rem;
 }
@@ -103,19 +94,18 @@ h2 {
   border-bottom: 2px dotted #eb7700;
 }
 
-
 h3 {
   font-size: 1.5rem;
-  padding : 2%;
+  padding: 2%;
 }
 
 h4 {
   font-size: 1.25rem;
-  padding : 1%;
+  padding: 1%;
 }
 
 p {
-  padding : 1%;
+  padding: 1%;
   line-height: 1.25rem;
 }
 
@@ -130,7 +120,6 @@ p {
 .center {
   text-align: center;
 }
-
 
 .small-font {
   font-size: 0.75rem;
@@ -149,14 +138,13 @@ ul {
 }
 
 .cours {
-  padding : 5%;
+  padding: 5%;
   border: 1px dotted #eb7700;
   border-radius: 10%;
   height: 18rem;
 }
 
 /* pourrais utiliser flex-column pour espacer de manière flexible les parties des boites "cours" */
-
 .cours-texte {
   padding-top: 2rem;
 }
@@ -170,7 +158,7 @@ ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 10%;
-  padding-right:10%;
+  padding-right: 10%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.02);
 }
@@ -184,9 +172,7 @@ ul {
   border: 1px solid grey;
 }
 
-
 /* BUTTONS */
-
 .button {
   background-color: red;
   color: black;
@@ -194,20 +180,15 @@ ul {
   border-radius: 15%;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
-
 /* *********************header */
-
-
 header {
   background-image: url("banner5.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .logo {
@@ -215,14 +196,13 @@ header {
   padding: 1rem 0 1rem 0;
   margin-left: 45%;
 }
+
 /* régler le problème de grosseur du logo */
-
-
 header h1 {
   padding: 2.5rem 0 2.5rem 0;
 }
 
-header>.flex-container{
+header>.flex-container {
   justify-content: center;
 }
 
@@ -233,42 +213,33 @@ header>.flex-container{
 /* p.lang-switch {
   padding: 0;
 } */
-
 .lang-switch a {
   color: white;
   font-size: 1.5rem;
   padding: 2rem 2rem 0 0;
 }
 
-
-
-
 /* ******************GRID */
-
 .grid-container {
-  display : grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap : 1.5rem;
+  gap: 1.5rem;
 }
 
 .grid-container-hor {
-  display : grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap : 1.5rem;
+  gap: 1.5rem;
 }
 
-
 /* ***************** flexbox */
-
 .flex-container {
   display: flex;
-  flex-direction : row;
+  flex-direction: row;
   justify-content: space-between;
   column-gap: 2rem;
   align-items: center;
 }
-
-
 
 .flex-1 {
   flex: 1;
@@ -276,7 +247,7 @@ header>.flex-container{
 }
 
 .flex-2 {
-  flex : 2;
+  flex: 2;
   align-self: center;
 }
 
@@ -288,15 +259,14 @@ header>.flex-container{
 .stretch {
   align-items: stretch;
 }
+
 /* (c'est apparu quand cette classe là?) */
-
-
 .round {
   max-height: 400px;
   max-width: 400px;
   margin: auto;
   border-radius: 200px;
-  border : none;
+  border: none;
 }
 
 .zines .flex-container {
@@ -305,7 +275,6 @@ header>.flex-container{
 }
 
 .zines img {
-
   max-width: 30%;
 }
 
@@ -314,60 +283,47 @@ header>.flex-container{
   padding-top: 0;
 }
 
-
 /* footer */
-
 #footer-bg {
-  padding : 2rem 5% 2rem 5%;
+  padding: 2rem 5% 2rem 5%;
   background-image: url("footer2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
 /* could use flex-direction: column instead of no flex */
-
 /* media queries */
-
 @media all and (max-width: 850px) {
-
   .hidden {
     display: none;
   }
 
   .grid-container {
-    display : grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap : 1.5rem;
+    gap: 1.5rem;
   }
 
   .no-flex-when-small {
-    display : block;
+    display: block;
   }
 
   .half {
     width: 100%;
   }
 
-  header h1{
+  header h1 {
     font-size: 1.75rem;
     letter-spacing: 3px;
   }
 
-  header {
+  header {}
 
-  }
-
-  footer {
-
-  }
+  footer {}
 
   .less-width {
     width: 100%;
@@ -377,12 +333,12 @@ header>.flex-container{
     padding: 0;
   }
 
-  header .lang-switch{
+  header .lang-switch {
     display: none;
   }
 
   .deuxieme-cours {
-    margin-top : 3rem;
+    margin-top: 3rem;
   }
 
   main {
@@ -397,8 +353,8 @@ header>.flex-container{
   header .flex-container {
     justify-content: center;
   }
-  /* régler l'allignement du logo et titre dans le header (again) */
 
+  /* régler l'allignement du logo et titre dans le header (again) */
   .actualités {
     width: 70%;
     margin: auto;
@@ -408,17 +364,14 @@ header>.flex-container{
   .zines .flex-container {
     flex-wrap: wrap;
   }
+
   .zines img {
     max-width: 100%;
     padding: 5%;
   }
-
 }
 
-
-
 @media all and (max-width: 480px) {
-
   html {
     font-size: 20px;
   }
@@ -428,9 +381,9 @@ header>.flex-container{
   }
 
   .grid-container {
-    display : grid;
+    display: grid;
     grid-template-columns: 1fr;
-    gap : 1.5rem;
+    gap: 1.5rem;
   }
 
   h2 {
@@ -440,7 +393,7 @@ header>.flex-container{
   }
 
   header h1 {
-    padding : 1rem 5%;
+    padding: 1rem 5%;
     font-size: 1.5rem;
     margin: auto;
     padding: 0;
@@ -459,11 +412,11 @@ header>.flex-container{
     max-width: 250px;
   }
 
-  p{
+  p {
     padding-bottom: 1rem;
   }
 
-  nav{
+  nav {
     padding: 0rem 5% 0.5rem 5%;
   }
 
@@ -473,11 +426,5 @@ header>.flex-container{
     justify-content: space-around;
   }
 
-
-
-
-
-/* vérifier que ça marche sur un vrai petit écran de cell */
-
-
+  /* vérifier que ça marche sur un vrai petit écran de cell */
 }

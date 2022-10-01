@@ -1,10 +1,7 @@
 /* The responsive hamburger menu was adapted from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
     See license file for its license */
-
 /* [ON BIG SCREENS] */
-
 /* styling nav items on computer screens */
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -20,7 +17,7 @@ nav li {
 }
 
 .current a {
-  color : #eb7700;
+  color: #eb7700;
 }
 
 .current a:hover {
@@ -32,14 +29,14 @@ nav li {
   display: flex;
 }
 
-
 /* (C) HIDE HAMBURGER */
 #hamnav label, #hamburger {
   display: none;
 }
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
+
   /* (A) BREAK INTO VERTICAL MENU */
   #hamitems a {
     box-sizing: border-box;
@@ -58,9 +55,13 @@ nav li {
     padding: 10px;
   }
 
-/* need to make hamburger icon stay visible (sticky) */
-
+  /* need to make hamburger icon stay visible (sticky) */
   /* (C) TOGGLE SHOW/HIDE MENU */
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked~#hamitems {
+    display: block;
+  }
 }

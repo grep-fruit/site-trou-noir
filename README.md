@@ -1,6 +1,5 @@
 # This is the website for the Collectif Le Trou Noir
 
-
 reste à faire :
 
 réparer le header et logo pour tablette et cellulaire
