@@ -33,14 +33,6 @@ main {
   margin: auto;
 }
 
-#gallerie {
-  padding: 0;
-}
-
-.padding-top {
-  padding-top: 3rem;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -50,6 +42,10 @@ img {
 .container {
   width: 85%;
   margin: auto;
+}
+
+.padding-top {
+  padding-top: 3rem;
 }
 
 /* ********************** text styles */
@@ -74,24 +70,18 @@ em {
 
 h1, h2 {
   font-family: 'ProfaisalRegular', 'Courier New', monospace;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 h1 {
-  font-size: 2rem;
   padding: 2rem;
-  line-height: 3rem;
   letter-spacing: 8px;
 }
 
 h2 {
-  font-size: 2rem;
   padding: 3%;
   letter-spacing: 6px;
-  line-height: 3rem;
-}
-
-.dots {
-  border-bottom: 2px dotted #eb7700;
 }
 
 h3 {
@@ -107,6 +97,10 @@ h4 {
 p {
   padding: 1%;
   line-height: 1.25rem;
+}
+
+ul {
+  line-height: 1.5rem;
 }
 
 .right-all {
@@ -125,16 +119,8 @@ p {
   font-size: 0.75rem;
 }
 
-.tab {
-  padding-left: 7rem;
-}
-
-.halftab {
-  padding-left: 1rem;
-}
-
-ul {
-  line-height: 1.5rem;
+.dots {
+  border-bottom: 2px dotted #eb7700;
 }
 
 .cours {
@@ -172,13 +158,6 @@ ul {
   border: 1px solid grey;
 }
 
-/* BUTTONS */
-.button {
-  background-color: red;
-  color: black;
-  padding: 5%;
-  border-radius: 15%;
-}
 
 /******************************************
 /* LAYOUT
@@ -260,13 +239,8 @@ header>.flex-container {
   align-items: stretch;
 }
 
-/* (c'est apparu quand cette classe là?) */
-.round {
-  max-height: 400px;
-  max-width: 400px;
-  margin: auto;
-  border-radius: 200px;
-  border: none;
+#gallerie {
+  padding: 0;
 }
 
 .zines .flex-container {
@@ -325,7 +299,7 @@ header>.flex-container {
 
   footer {}
 
-  .less-width {
+  .container {
     width: 100%;
   }
 
