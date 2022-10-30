@@ -1,11 +1,7 @@
 # This is the website for the Collectif Le Trou Noir
 
-reste à faire :
+## All pictures belong to their authors (the members of the Trou Noir collective).
 
-réparer le header et logo pour tablette et cellulaire
+I made the web site, it's just a static site, I think it's cool
 
-style les blocs de cours comme il faut
-
-ajouter une photo sur la page membres?
-
-faire la page publications
+https://www.trounoirdarkroom.com/ 
